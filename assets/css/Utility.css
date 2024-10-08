@@ -1,0 +1,142 @@
+a{
+    text-decoration: none;
+}
+.text-center{
+    text-align: center;
+}
+.text-justify{
+    text-align: justify;
+}
+.pt-5{
+    padding-top: 5px;
+}
+.pt-10{
+    padding-top: 10px;
+}
+.pt-15{
+    padding-top: 15px;
+}
+.pt-20{
+    padding-top: 20px;
+}
+.pt-30{
+    padding-top: 30px;
+}
+.pt-40{
+    padding-top: 40px;
+}
+.pt-50{
+    padding-top: 50px;
+}
+.pb-5{
+    padding-bottom: 5px;
+}
+.pb-10{
+    padding-bottom: 10px;
+}
+.pb-15{
+    padding-bottom: 15px;
+}
+.pb-20{
+    padding-bottom: 20px;
+}
+.pb-25{
+    padding-bottom: 25px;
+}
+.pb-30{
+    padding-bottom: 30px;
+}
+.pb-40{
+    padding-bottom: 40px;
+}
+.pb-50{
+    padding-bottom: 50px;
+}
+.p-5{
+    padding: 5px;
+}
+.p-10{
+    padding: 10px;
+}
+.p-15{
+    padding: 15px;
+}
+.p-20{
+    padding: 20px;
+}
+.p-25{
+    padding: 25px;
+}
+.p-30{
+    padding: 30px;
+}
+.p-40{
+    padding: 40px;
+}
+.p-50{
+    padding: 50px;
+}
+
+.mb-5{
+    padding-bottom: 5px;
+}
+.mb-10{
+    padding-bottom: 10px;
+}
+.mb-15{
+    padding-bottom: 15px;
+}
+.mb-20{
+    padding-bottom: 20px;
+}
+.mb-25{
+    padding-bottom: 25px;
+}
+.mb-30{
+    padding-bottom: 30px;
+}
+.mb-40{
+    padding-bottom: 40px;
+}
+.mb-50{
+    padding-bottom: 50px;
+}
+.content-card {
+    position: relative;
+    width: 290px;
+    height: 320px;
+    border-radius: 10px;
+    padding: 20px 20px;
+    box-shadow: inset 0 0px 4px rgba(0, 0, 0, 0.5);
+    border-bottom: 5px solid #4D1DAD;
+    overflow: hidden; /* Ensure the pseudo-element doesn't overflow */
+    z-index: 1;
+}
+
+.content-card::before {
+    content: '';
+    position: absolute;
+    bottom: 0; /* Start from the bottom */
+    left: 0;
+    right: 0;
+    top: 100%; /* Cover the entire card */
+    background: linear-gradient(90deg, rgb(77 29 173) 22%, rgb(26, 17, 86) 81%);
+    transition: top 0.8s linear; /* Transition the bottom position */
+    z-index: -1; /* Place it behind the content */
+}
+
+.content-card:hover::before {
+    top: 0; /* Move the pseudo-element up on hover */
+}
+
+.content-card:hover {
+    color: rgb(254, 254, 254); /* Change text color on hover */
+    z-index: 2; /* Ensure the text is above the pseudo-element */
+}
+@media screen and (max-width: 768px) {
+    .content-card{
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+}
+
