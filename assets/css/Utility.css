@@ -111,6 +111,7 @@ a{
     border-bottom: 5px solid #4D1DAD;
     overflow: hidden; /* Ensure the pseudo-element doesn't overflow */
     z-index: 1;
+    background: white;
 }
 
 .content-card::before {
